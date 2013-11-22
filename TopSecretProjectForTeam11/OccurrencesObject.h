@@ -10,9 +10,13 @@
 
 @interface OccurrencesObject : NSObject <NSCoding>
 
-@property NSDate *startDate;
-@property NSDate *endDate;
+@property (strong, nonatomic) NSDate *startDate;
+@property (strong, nonatomic) NSDate *endDate;
 
 -(id) initWithStartDate:(NSDate *) startDate
             WithEndDate:(NSDate *) endDate;
+
+- (NSDate *) startDate;
+- (NSDate *) endDate;
+
 @end

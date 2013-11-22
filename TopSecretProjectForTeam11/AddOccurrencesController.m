@@ -46,6 +46,16 @@
 
 - (IBAction)saveButton:(UIButton *)sender {
     if (self.startDate && self.endDate){
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateStyle:NSDateFormatterMediumStyle];
+        [formatter setDateFormat:@"hh:mm a"];
+        NSTimeInterval comp = [self.endDate timeIntervalSinceDate:self.startDate];
+        if (comp < 0)
+        {
+            self.startDate = [self.startDate dateByAddingTimeInterval:-86400];
+            self.startLabel.text = [formatter stringFromDate:self.startDate];
+        }
+        
         [self.occurrences addObject:[[OccurrencesObject alloc] initWithStartDate:self.startDate WithEndDate:self.endDate]];
         [self.navigationController popViewControllerAnimated:YES];
     }
@@ -74,13 +84,32 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterMediumStyle];
     [formatter setDateFormat:@"hh:mm a"];
+    NSTimeInterval comp = [sender.date timeIntervalSinceNow];
     if (self.currentSegment == 0) {
-        self.startDate = sender.date;
-        self.startLabel.text = [formatter stringFromDate:self.startDate];
+        if (comp < 0)
+        {
+            self.startDate = sender.date;
+            self.startLabel.text = [formatter stringFromDate:self.startDate];
+        }
+        else
+        {
+            self.startDate = [sender.date dateByAddingTimeInterval:-86400];
+            self.startLabel.text = [formatter stringFromDate:self.startDate];
+        }
+        
+        
     }
     else {
-        self.endDate = sender.date;
-        self.endLabel.text = [formatter stringFromDate:self.endDate];
+        if (comp < 0)
+        {
+            self.endDate = sender.date;
+            self.endLabel.text = [formatter stringFromDate:self.endDate];
+        }
+        else
+        {
+            self.endDate = [sender.date dateByAddingTimeInterval:-86400];
+            self.endLabel.text = [formatter stringFromDate:self.endDate];
+        }
     }
 }
 @end

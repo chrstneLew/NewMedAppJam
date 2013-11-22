@@ -35,4 +35,14 @@
     [aCoder encodeObject:_endDate forKey:@"end"];
     
 }
+
+- (NSDate *) startDate
+{
+    return _startDate;
+}
+
+-(NSDate *) endDate
+{
+    return _endDate;
+}
 @end
