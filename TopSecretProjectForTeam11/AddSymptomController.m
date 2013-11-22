@@ -137,6 +137,8 @@
         [[self symptomsEditText] setText: @""];
         [[self painValue] setValue:0];
         [[self painNumber] setText: @"0"];
+        [self.occurrencesDelegate.array removeAllObjects];
+        [self.treatmentDelegate.array removeAllObjects];
         _notes = @"";
         self.currentSegment = 0;
         self.segmentValue.selectedSegmentIndex = 0;
