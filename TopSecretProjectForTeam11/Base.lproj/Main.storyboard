@@ -981,12 +981,31 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <viewControllerLayoutGuide type="top" id="fkD-jH-hNT"/>
                         <viewControllerLayoutGuide type="bottom" id="aEU-bI-tJY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xcX-bf-OV7">
+                    <view key="view" contentMode="scaleToFill" id="xcX-bf-OV7" customClass="SummaryForaSummaryForSymptomController">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-5o-C57">
+                                <rect key="frame" x="0.0" y="66" width="320" height="316"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cn-Rb-VAs">
+                                <rect key="frame" x="137" y="390" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="KEK-Gj-wMe" eventType="touchUpInside" id="vT3-p9-pNq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1zd-Gn-P9n"/>
+                    <connections>
+                        <outlet property="graph" destination="JdN-5o-C57" id="Q4V-kv-xGP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJX-Tu-ze6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
