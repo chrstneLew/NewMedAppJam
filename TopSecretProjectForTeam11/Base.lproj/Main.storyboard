@@ -528,7 +528,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edM-Yp-nN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2763" y="1874"/>
+            <point key="canvasLocation" x="2205" y="1856"/>
         </scene>
         <!--Edit Rec Sym View Controller-->
         <scene sceneID="XHK-51-4bk">
@@ -590,7 +590,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7j-tC-ifb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2763" y="1190"/>
+            <point key="canvasLocation" x="2323" y="1190"/>
         </scene>
         <!--Navigation Controller - Home-->
         <scene sceneID="Kbj-Br-Dv4">
@@ -971,7 +971,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWF-5H-iBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3624" y="-4"/>
+            <point key="canvasLocation" x="3080" y="-852"/>
         </scene>
         <!--Summary For Symptom Controller-->
         <scene sceneID="Od1-6G-cWX">
