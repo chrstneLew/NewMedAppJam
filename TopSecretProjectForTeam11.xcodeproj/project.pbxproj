@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0497B4183F3034001D5938 /* calendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497AA183F3034001D5938 /* calendarbutton.png */; };
+		0D0497B5183F3034001D5938 /* calendarbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497AB183F3034001D5938 /* calendarbutton@2x.png */; };
+		0D0497B6183F3034001D5938 /* homebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497AC183F3034001D5938 /* homebutton.png */; };
+		0D0497B7183F3034001D5938 /* homebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497AD183F3034001D5938 /* homebutton@2x.png */; };
+		0D0497B8183F3034001D5938 /* summarybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497AE183F3034001D5938 /* summarybutton.png */; };
+		0D0497B9183F3034001D5938 /* summarybutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497AF183F3034001D5938 /* summarybutton@2x.png */; };
+		0D0497BA183F3034001D5938 /* symptombutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497B0183F3034001D5938 /* symptombutton.png */; };
+		0D0497BB183F3034001D5938 /* symptombutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497B1183F3034001D5938 /* symptombutton@2x.png */; };
+		0D0497BC183F3034001D5938 /* updatebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497B2183F3034001D5938 /* updatebutton.png */; };
+		0D0497BD183F3034001D5938 /* updatebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0497B3183F3034001D5938 /* updatebutton@2x.png */; };
 		0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2EB5118398C9300C83558 /* SymptomViewController.m */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
@@ -79,6 +89,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0497AA183F3034001D5938 /* calendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarbutton.png; sourceTree = "<group>"; };
+		0D0497AB183F3034001D5938 /* calendarbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendarbutton@2x.png"; sourceTree = "<group>"; };
+		0D0497AC183F3034001D5938 /* homebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homebutton.png; sourceTree = "<group>"; };
+		0D0497AD183F3034001D5938 /* homebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homebutton@2x.png"; sourceTree = "<group>"; };
+		0D0497AE183F3034001D5938 /* summarybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summarybutton.png; sourceTree = "<group>"; };
+		0D0497AF183F3034001D5938 /* summarybutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summarybutton@2x.png"; sourceTree = "<group>"; };
+		0D0497B0183F3034001D5938 /* symptombutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symptombutton.png; sourceTree = "<group>"; };
+		0D0497B1183F3034001D5938 /* symptombutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symptombutton@2x.png"; sourceTree = "<group>"; };
+		0D0497B2183F3034001D5938 /* updatebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = updatebutton.png; sourceTree = "<group>"; };
+		0D0497B3183F3034001D5938 /* updatebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updatebutton@2x.png"; sourceTree = "<group>"; };
 		0DC2EB5018398C9300C83558 /* SymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomViewController.h; sourceTree = "<group>"; };
 		0DC2EB5118398C9300C83558 /* SymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomViewController.m; sourceTree = "<group>"; };
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -194,6 +214,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0497A7183F3016001D5938 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0D0497AA183F3034001D5938 /* calendarbutton.png */,
+				0D0497AB183F3034001D5938 /* calendarbutton@2x.png */,
+				0D0497AC183F3034001D5938 /* homebutton.png */,
+				0D0497AD183F3034001D5938 /* homebutton@2x.png */,
+				0D0497AE183F3034001D5938 /* summarybutton.png */,
+				0D0497AF183F3034001D5938 /* summarybutton@2x.png */,
+				0D0497B0183F3034001D5938 /* symptombutton.png */,
+				0D0497B1183F3034001D5938 /* symptombutton@2x.png */,
+				0D0497B2183F3034001D5938 /* updatebutton.png */,
+				0D0497B3183F3034001D5938 /* updatebutton@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		0DD94D6E1837432C0086C009 /* SymptomObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +277,7 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				0D0497A7183F3016001D5938 /* Icons */,
 				CBF4A092183B3A47005B38AE /* Update */,
 				418B64FF183B0509005A668D /* TSQ */,
 				5DE630D81838D0FD0005795D /* calLib */,
@@ -517,13 +555,23 @@
 			files = (
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
+				0D0497B4183F3034001D5938 /* calendarbutton.png in Resources */,
+				0D0497BC183F3034001D5938 /* updatebutton.png in Resources */,
 				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
+				0D0497B5183F3034001D5938 /* calendarbutton@2x.png in Resources */,
+				0D0497B8183F3034001D5938 /* summarybutton.png in Resources */,
+				0D0497BD183F3034001D5938 /* updatebutton@2x.png in Resources */,
 				418B6539183B0509005A668D /* TSQLICENSE in Resources */,
+				0D0497B6183F3034001D5938 /* homebutton.png in Resources */,
 				418B6538183B0509005A668D /* hebrew.png in Resources */,
 				41433EC61835EB2B007588F7 /* README.md in Resources */,
+				0D0497B7183F3034001D5938 /* homebutton@2x.png in Resources */,
+				0D0497B9183F3034001D5938 /* summarybutton@2x.png in Resources */,
+				0D0497BA183F3034001D5938 /* symptombutton.png in Resources */,
 				41433EC51835EB2B007588F7 /* LICENSE in Resources */,
 				418B653A183B0509005A668D /* TSQREADME.md in Resources */,
 				418B6537183B0509005A668D /* gregorian.png in Resources */,
+				0D0497BB183F3034001D5938 /* symptombutton@2x.png in Resources */,
 				41433E7C18357F0B007588F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
