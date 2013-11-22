@@ -113,6 +113,7 @@
         _symptom.notes = self.notesView.text;
         
         [symdic editSymptomADD:(_symptom)];
+        [self.navigationController popToRootViewControllerAnimated:YES];
         
         //[self.navigationController popViewControllerAnimated:YES];
         
@@ -121,8 +122,6 @@
         [self.SymptomText setUserInteractionEnabled:NO];
         _notesView.editable = NO;
         _PainSlider.enabled = NO;
-        
-        
     }
 }
 
