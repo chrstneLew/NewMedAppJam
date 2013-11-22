@@ -143,7 +143,7 @@
     // Return NO if you do not want the specified item to be editable.
     // don't want to be able to edit recent symptoms or add symptom section
     if (indexPath.section == 0) {
-        if (indexPath.row == 0 || indexPath.row == 1) {
+        if (indexPath.row == 0) {
             return NO;
         }
     }

@@ -48,9 +48,7 @@
 }
 
 // Add Symptom Objects to the symDictionary
-- (void)addSymptom:(SymptomObject *)symObject
-{
-    symObject.date = [NSDate date];
+- (void)addSymptom:(SymptomObject *)symObject{
     [self.symDictionary setObject:symObject forKey:symObject.symptom];
     
     NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
@@ -98,4 +96,44 @@
     }
 }
 
+// used for updating a symptom
+// Remove Symptom Objects for updating
+- (void)editSymptomREMOVE:(SymptomObject *)symObject{
+    [self.symDictionary removeObjectForKey:symObject.symptom];
+    
+    NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
+    BOOL save = [symptomDict writeToFile:_filepath atomically:YES];
+    
+    if(save)
+    {
+        NSLog(@"remove symptom here for edit");
+        //UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Removed" message:@"Your symptom has been removed." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        //[symptomAlert show];
+    }
+    else
+    {
+        NSLog(@"remove symptom failed for edit");
+        //UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Remove Failed" message:@"Your symptom failed to remove." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        //[symptomAlert show];
+    }
+}
+
+// Add Symptom Objects for updating
+- (void)editSymptomADD:(SymptomObject *)symObject{
+    [self.symDictionary setObject:symObject forKey:symObject.symptom];
+    
+    NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
+    BOOL save = [symptomDict writeToFile:_filepath atomically:YES];
+    
+    if(save)
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Updated" message:@"Your symptom has been updated." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
+    else
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Update Failed" message:@"Your symptom failed to update." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
+}
 @end

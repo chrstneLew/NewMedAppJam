@@ -20,6 +20,9 @@
 - (void)removeSymptom:(SymptomObject *)symObject;
 - (SymptomObject *) findSymptom:(NSString *)symptom;
 
+- (void)editSymptomADD:(SymptomObject *)symObject;
+- (void)editSymptomREMOVE:(SymptomObject *)symObject;
+
 @property (strong, nonatomic) NSArray *paths;
 @property (strong, nonatomic) NSString *path;
 @property (strong, nonatomic) NSString *filepath;
