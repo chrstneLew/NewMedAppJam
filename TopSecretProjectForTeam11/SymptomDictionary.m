@@ -51,7 +51,7 @@
 - (void)addSymptom:(SymptomObject *)symObject
 {
     symObject.date = [NSDate date];
-    symObject.home = @"YES";
+    symObject.home = YES;
     [self.symDictionary setObject:symObject forKey:symObject.symptom];
     
     NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
